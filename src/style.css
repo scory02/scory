@@ -1,0 +1,94 @@
+*,
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+  font-family:font-mono;
+}
+.layout > :first-child {
+  height: 100vh;
+}
+.flex {
+  flex: 1;
+  display: flex;
+  box-sizing: border-box;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+}
+.echarts,img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.suffix {
+  border: 1px solid rgba(0, 128, 0, 0.36);
+}
+.light-green {
+  background-color: rgba(0, 128, 0, 0.12);
+}
+.green {
+  background-color: rgba(0, 128, 0, 0.24);
+}
+.screen-wrapper {
+  display: flex;
+}
+/*
+  进入和离开动画可以使用不同
+  持续时间和速度曲线。
+*/
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+.fade-leave, .fade-enter-to {
+  opacity: 1
+}
+.fade-enter-active, .fade-leave-active {
+  transition: all .2s
+}
+
+
+
+/*
+  修改UI库全局样式
+*/
+.n-card{
+    display: block !important;
+}
+.splitpanes.default-theme .splitpanes__pane{
+  background-color: unset !important;
+}
+.loading-parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e7e7e854;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  border: 0.25em solid rgba(0, 0, 0, 0.2);
+  animation: pass 2s ease-in-out infinite;
+  /* 设置图片路径和样式 */
+  background-image: url('/cxk.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

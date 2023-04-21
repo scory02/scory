@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/cxk.gif" />
+  <title>scory</title>
+  <meta name="author" content="余阳磊" />
+  <meta name="keywords" content="余阳磊 scory 博客 技术 在线 前端 vue vue3 echarts webgl vr vite pinia" />
+  <meta name="description" content="scory是基于Vue 3 + NaiveUi + pinia + Vite的技术博客"/>
+  <meta name="copyright" content="scory" />
+  <meta name="robots" content="all" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- <div class="beian" id="Beian">
+    <span style="font-family:arial;">Copyright &copy;scory </span>
+    |
+    <a href="https://beian.miit.gov.cn/" target="_blank" class="a">陕ICP备2023002971号-1</a>
+  </div> -->
+  <script>
+    var wis = window['this'];
+    var message = window['message'];
+    var get = window['get'];
+    var post = window['post'];
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+<style>
+  body {
+    overflow: hidden;
+  }
+
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  div#app:empty:before {
+    content: "Loading...";
+    color: black;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+</style>
+
+<!-- loading -->
+<style>
+  @keyframes pass {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes pass1 {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+
+<!-- 备案 -->
+<style>
+  .beian {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    text-align: center;
+    background-color: #ffffff36;
+  }
+
+  .a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+</html>
