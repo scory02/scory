@@ -1,8 +1,8 @@
-# scory 个人技术博客
+# scory 开源项目
 响应式，自适应，
 VR大屏，中后台管理，
 unity3D可视化集成，地图操作，
-echarts高效封装，数据持久化等
+echarts高效封装，数据持久化等。。。持续更新中！
 
 
 # Vue 3 + NaiveUi + pinia + Vite
@@ -24,5 +24,12 @@ echarts高效封装，数据持久化等
 
     # 本地开发 启动项目
     npm run dev
+    
+    ```
+# 注意事项
+
+    ```
+    # 关于unity
+    public目录下的game是三维unity游戏包，项目中可以不用，删除不影响，相应的在项目中运行unity页面时不会出现任何内容。
     
     ```
